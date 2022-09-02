@@ -332,6 +332,8 @@ async function run(cfg, branchName) {
                 await updateOrCreateTestingGroup(endpointUrl, endpoints, branchName);
 
                 console.log(chalk.green(`Testing group ${branchName} updated`));
+
+                return true;
             } catch (e) {
                 console.error(chalk.red(e));
                 process.exit(1);
