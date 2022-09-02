@@ -1,6 +1,6 @@
 {
   "name": "@ezavalishin/vk-miniapps-deploy-group",
-  "version": "0.0.26",
+  "version": "0.0.1",
   "description": "Deploy to VK Mini Apps hosting and testing groups with one simple command",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,6 @@
   },
   "bin": "./bin/vk-miniapps-deploy-group",
   "dependencies": {
-    "@vkontakte/vk-miniapps-deploy": "^0.0.26",
     "async": "^3.2.0",
     "chalk": "^3.0.0",
     "configstore": "^5.0.0",

@@ -2,22 +2,6 @@
 # yarn lockfile v1
 
 
-"@vkontakte/vk-miniapps-deploy@^0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vk-miniapps-deploy/-/vk-miniapps-deploy-0.0.26.tgz#91f519df62ee3f11923c859a2e217beee200bde9"
-  integrity sha512-80n5Mq/uYgg2X5W3bv2yup6euq4UTuWsxAnlnjPKEnUlAgc5qNiVHggaYWWtycl0XsLgolWAwASliL0iPqompg==
-  dependencies:
-    async "^3.2.0"
-    chalk "^3.0.0"
-    configstore "^5.0.0"
-    form-data "^3.0.0"
-    fs-extra "^8.0.1"
-    glob "^7.1.6"
-    node-fetch "^2.6.0"
-    prompts "^2.1.0"
-    require-module "^0.1.0"
-    zip-a-folder "0.0.12"
-
 ansi-styles@^4.1.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
