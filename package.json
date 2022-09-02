@@ -1,7 +1,7 @@
 {
   "name": "@ezavalishin/vk-miniapps-deploy-group",
   "version": "0.0.26",
-  "description": "Deploy to VK Mini Apps hosting with one simple command",
+  "description": "Deploy to VK Mini Apps hosting and testing groups with one simple command",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
