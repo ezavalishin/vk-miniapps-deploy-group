@@ -1,0 +1,29 @@
+{
+  "name": "@ezavalishin/vk-miniapps-deploy-group",
+  "version": "0.0.26",
+  "description": "Deploy to VK Mini Apps hosting with one simple command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "./bin/vk-miniapps-deploy-group"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "bin": "./bin/vk-miniapps-deploy-group",
+  "dependencies": {
+    "@vkontakte/vk-miniapps-deploy": "^0.0.26",
+    "async": "^3.2.0",
+    "chalk": "^3.0.0",
+    "configstore": "^5.0.0",
+    "form-data": "^3.0.0",
+    "fs-extra": "^8.0.1",
+    "glob": "^7.1.6",
+    "minimist": "^1.2.6",
+    "node-fetch": "^2.6.0",
+    "prompts": "^2.1.0",
+    "require-module": "^0.1.0",
+    "zip-a-folder": "0.0.12"
+  }
+}

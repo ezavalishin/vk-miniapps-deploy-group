@@ -1,0 +1,51 @@
+#!/usr/bin/env node
+
+const fs = require('fs-extra');
+const configFilePath = './vk-hosting-config.json';
+
+async function run() {
+
+    const argv = require('minimist')(process.argv.slice(2));
+
+
+    const branchName = argv.branch;
+
+    if (!branchName) {
+        console.error("provide branch name with --branch");
+        process.exit(1);
+        return false;
+    }
+
+    if (fs.pathExists(configFilePath).then((res) => {
+        if (!res) {
+            console.error(configFilePath + ' is missing');
+            return false;
+        }
+    })) ;
+
+    const configJSON = require('require-module')(configFilePath);
+    if (!configJSON) {
+        console.error(configFilePath + ' is missing');
+        return false;
+    }
+
+    const deploy = require('../index');
+    const cfg = configJSON || {};
+
+    if (!cfg) {
+        console.error('vk-hosting-config.json is missing');
+        return false;
+    }
+
+    let confirmation = {
+        result: true,
+    }
+
+    if (confirmation.result) {
+        const status = await deploy.run(cfg, branchName) ? 0 : 1;
+        process.exit(status);
+    }
+
+    process.exit();
+}
+run().then(r => console.log(r));
